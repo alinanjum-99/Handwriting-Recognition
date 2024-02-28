@@ -3,8 +3,10 @@ import cv2 #for computer vision to load and process images
 import numpy as np
 import matplotlib.pyplot as plt #visualization of digits 
 import tensorflow as tf #machine learning part
+import image 
 
-
+# run the following command primarily for training the model 
+################################################################
 # mnist = tf.keras.datasets.mnist
 
 # (x_train, y_train), (x_test, y_test) = mnist.load_data()
@@ -29,12 +31,17 @@ import tensorflow as tf #machine learning part
 
 # model.save('test.model')
 
+# testing the model to see the loss and accuracy
+################################
+
 # model = tf.keras.models.load_model('test.model')
 
 # loss, accuracy = model.evaluate(x_test, y_test)
 
 # print('loss:',loss)
 # print ('accuracy:',accuracy)
+
+#loading handwritten digits to see the loss and accuracy of the model
 
 model = tf.keras.models.load_model('test.model')
 
